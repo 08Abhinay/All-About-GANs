@@ -50,7 +50,7 @@ class GeneratorResNet(nn.Module):
         
         model =  [
             nn.ReflectionPad2d(channels),
-            nn.Conv2d(channels, out_channels, kernal_size=7),
+            nn.Conv2d(channels, out_channels, kernel_size=7),
             nn.InstanceNorm2d(out_channels),
             nn.ReLU(inplace=True),
         ]
